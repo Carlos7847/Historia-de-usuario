@@ -1,0 +1,6 @@
+.bg{
+    background-image: url("https://th.bing.com/th/id/R.83d6b10f76a5d00417888afdf053ad1a?rik=nZ4RBXN%2fb6WBYA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fpokeball%2fpokeball_PNG24.png&ehk=FGMC2zP%2fF%2bFTYrCNhdwixFbFIlcviRa6RyQKQoXuaTY%3d&risl=&pid=ImgRaw&r=0");
+    /* background-image: url("../../../../img/pokemon.png"); */
+    background-position: center center;
+    object-fit: cover;
+}

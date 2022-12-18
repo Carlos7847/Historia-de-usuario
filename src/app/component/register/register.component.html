@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row mt-5">
         <div class="col"></div>
         <div class="col-4">
@@ -28,11 +28,44 @@
                             </div>
                         </div>
                     </form>
-                    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-                    
                 </div>
             </div>
         </div>
         <div class="col"></div>
+    </div>
+</div> -->
+<!--                          //////////////////////////////////////////////////////////////////////////////////////                  -->
+
+<div class="container w-75 mt-5 rounded shadow">
+    <div class="row align-items-stretch">
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+        </div>
+        <div class="col bg-white p-5 rounded-end">
+            <!-- <div class="text-end">
+                <img src="https://www.pngfind.com/pngs/m/115-1153649_pokeball-pokemon-pokebola-png-transparent-png.png" width="60px" alt="pokebola">
+            </div> -->
+            <h2 class="fw-bold text-center py-5">Registrate</h2>
+
+            <!-- REGISTER -->
+
+            <form action="">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password">
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary" (click)="register()">Crear cuenta</button>
+                </div>
+                <div class="my-3">
+                    <span>¿Ya tienes una cuenta? <a href="/login">Login</a></span>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

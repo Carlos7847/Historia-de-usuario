@@ -30,7 +30,7 @@ Las tecnologías usadas en esta app:
 Como instalar esta app en tu ordenador.
 
 ```
-$ git clone https://example.com
+$ git clone https://github.com/Carlos7847/Historia-de-usuario.git
 $ cd ../path/to/the/file
 $ npm install
 $ npm start
