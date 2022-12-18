@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "firebase-angular-crud:build:production",
+            "firebaseProject": "listado-personas-8c140",
+            "firebaseHostingSite": "listado-personas-8c140"
+          }
         }
       }
     }

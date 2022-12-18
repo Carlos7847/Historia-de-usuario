@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "listado-personas-8c140": {
+      "hosting": {
+        "firebase-angular-crud": [
+          "listado-personas-8c140"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "listado-personas-8c140"
+  }
+}

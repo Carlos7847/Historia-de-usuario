@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    
+    <div class="mb-3">
+        <h1 class="">Listado de Pokemons</h1> <i (click)="logout()" class="fa-solid fa-right-from-bracket" >Logout</i>
+    <!-- <button type="submit" class="btn btn-info text-center" (click)="logout()">Logout</button> -->
+    
+</div>
+<hr>
+<div class="cantidad">Hay un total de {{totalPokemons}} Pokemons en la lista</div>
+
+<input type="text" class="form-control mb-2" placeholder="Buscar" #txtSearch (keyup)="onSearchPokemon(txtSearch.value)">
+
+<button class="btn btn-primary" (click)="prevPage()">Anteriores</button>
+&nbsp;
+<button class="btn btn-primary" (click)="nextPage()" [disabled]="(pokemons|filtro:page:search).length === 0">Siguientes</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Sprite</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let poke of pokemons | filtro:page:search"
+            [ngStyle]="{'height': '100px'}">
+            <td>{{poke.id}}</td>
+            <td>{{poke.name}}</td>
+            <td>
+                <img [src]="poke.pic" [alt]="poke.name" [ngStyle]="{'width': '75px'}">
+            </td>
+        </tr>
+    </tbody>
+</table>
